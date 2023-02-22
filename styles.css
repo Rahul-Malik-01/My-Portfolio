@@ -1,0 +1,63 @@
+@import"https://fonts.cdnfonts.com/css/clash-display";
+@import"https://fonts.cdnfonts.com/css/satoshi";
+@import"https://fonts.cdnfonts.com/css/gilroy-bold";
+
+* {
+    font-family: Clash Display,sans-serif;
+}
+
+.pageLines {
+    position: absolute;
+    inset: 0;
+    mask-image: linear-gradient(0deg,transparent,#222,#222);
+    background-image: url(./assets/asset\ 3.svg);
+    background-position: bottom 1px center;
+    background-color: hsla(0,0%,100%,.25);
+}
+
+.homeHeading h1 span::after {
+    position: absolute;
+    content: "";
+    background: rgba(34,34,34,.1);
+    border-top: 2px solid rgba(34,34,34,.5);
+    left: 0;
+    right: 0;
+    bottom: 3px;
+    height: 15px;
+    z-index: -1;
+}
+
+.homeAnchor a {
+    transition: transform .25s ease-in-out
+}
+
+.homeAnchor a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #222;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .25s ease-in-out;
+}
+
+.homeAnchor a:hover {
+    transform: translateX(.25rem)
+}
+
+.homeAnchor a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1)
+}
+
+a.active {
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+a.active li {
+    color: #222;
+}
