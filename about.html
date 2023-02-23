@@ -22,7 +22,7 @@
                     <img src="./assets/asset 6.svg" alt="" height="39px" width="100px">
                 </div>
                 <!-- theme changing btn -->
-                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff]">
+                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff] z-50">
                     <a href="#" class="text-[24px]">
                         <i class="fa-regular fa-moon"></i>
                     </a>
@@ -30,55 +30,83 @@
             </div>
         </header>
 
-        <!-- content section -->
-        <!-- <section class="relative w-[928px] mx-auto h-[204px]">
-            <div>
-                <img src="./assets/boy-avatar.png" alt=""
-                     width="300px" height="300px" class="absolute -left-[5%] -top-[100%]">
-                <img src="./assets/laptop.png" alt=""
-                     width="300px" height="300px" class="absolute -right-[5%] -bottom-[50%]">
-
-                <div class="homeHeading">
-                    <h1 class="text-[3rem] leading-1 font-[700] font-['Clash Display'] tracking-[0.125rem] text-transparent 
-                        pb-[0.25rem] uppercase text-center" 
-                        style="-webkit-text-stroke: 1.5px #222;">
-                        Hey, I'm
-                        <span class="text-[3rem] leading-[1rem] font-[700] font-['Clash Display'] tracking-[0.125rem] text-[#222]
-                              uppercase relative">
-                              Rahul Malik
-                        </span>
-                    </h1>
-                    <p class="text-[1.25rem] font-[500] leading-1.5 text-[#222] pt-[0.375rem] pb-[1.5rem] text-center">
-                        I'm a MERN stack developer.
-                    </p>
+        <!-- about section -->
+        <section class="flex">
+            <!-- left part -->
+            <div class="font-['Clash Display'] w-[75%] h-[100%] flex flex-col gap-[1rem] pl-[15rem]">
+                <!-- heading -->
+                <div class="w-[100%] border-b-[2px] border-solid border-[#222]">
+                    <h2 class="text-[3.5rem] font-[700] text-transparent uppercase"
+                    style="-webkit-text-stroke: 1.5px #222;">
+                        About
+                    </h2>
                 </div>
 
-                <div class="homeAnchor flex justify-center items-center">
-                    <a href="#" class="relative flex justify-center items-center gap-[0.25rem] w-fit">
-                        <img src="./assets/asset 9.svg" alt="">
-                        <p class="font-[500] text-[#222]">About me</p>
-                    </a>
+                <!-- para -->
+                <p class="text-[1.25rem] font-[500] leading-[1.5]">
+                    Hey, my name is Leonel NGOYA but I am much better known as LN. I am a 19 year 
+                    old Frontend Developer, Web Integrator and Awwwards Young Jury from Cameroon, I’m passionate 
+                    about creating beautiful, intuitive and responsive websites. I also like to listen to music and in 
+                    my spare time I often write articles about development and I also make youtube videos
+                </p>
+                <!-- languages -->
+                <div class="font-['Clash Display'] flex flex-col gap-[0.25rem]">
+                    <h3 class="font-[500] text-[1.25rem] uppercase mb-[0.5rem]">languages</h3>
+                    <ul>
+                        <li class="text-[1.125rem] font-[400]">
+                            Marathi <span class="opacity-[0.6] text-[0.9rem] ml-[0.25rem]">Native</span>
+                        </li>
+                        <li class="text-[1.125rem] font-[400]">
+                            Hindi <span class="opacity-[0.6] text-[0.9rem] ml-[0.25rem]">Fluent</span>
+                        </li>
+                        <li class="text-[1.125rem] font-[400]">
+                            English <span class="opacity-[0.6] text-[0.9rem] ml-[0.25rem]">Fluent</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- links -->
+                <div class="z-50 flex gap-4 text-[1.25rem] font-[500] text-[#222] items-center">
+                    <div class="homeAnchor">
+                        <a href="#" class="flex gap-2">
+                            <img src="./assets/arrow-up-right.svg" alt="" width="16px" height="16px">
+                            Resume
+                        </a>
+                    </div>
+                    <div class="homeAnchor">
+                        <a href="https://www.linkedin.com/in/rahul-malik-383892238" class="flex gap-2">
+                            <img src="./assets/arrow-up-right.svg" alt="" width="16px" height="16px">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right part -->
+            <div class="w-[25%] min-h-[100vh] pl-[1.5rem] absolute right-0 top-0">
+                <div>
+                    <img src="./assets/picture3d.jpg" alt="" class="h-[100vh] object-cover rounded-l-[50px]">
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- nav bar -->
         <section class="flex justify-center items-center">
             <nav class="fixed bottom-[1rem] p-[0.5rem]">
                 <ul class="flex justify-center items-center rounded-full overflow-hidden gap-[0.25rem] p-[0.3rem] bg-[#222]">
-                    <a href="index.html" class="px-[0.5rem] py-[0.7rem]">
+                    <a href="index.html" class="px-[0.5rem] py-[0.7rem] nav-link">
                         <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Home</li>
                     </a>
-                    <a href="about.html" class="px-[0.5rem] py-[0.7rem]">
+                    <a href="about.html" class="px-[0.5rem] py-[0.7rem] nav-link">
                         <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">About</li>
                     </a>
-                    <a href="skills.html" class="px-[0.5rem] py-[0.7rem]">
+                    <a href="skills.html" class="px-[0.5rem] py-[0.7rem] nav-link">
                         <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Skills</li>
                     </a>
-                    <a href="experience.html" class="px-[0.5rem] py-[0.7rem]">
+                    <a href="experience.html" class="px-[0.5rem] py-[0.7rem] nav-link">
                         <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Experience</li>
                     </a>
-                    <a href="contact.html" class="px-[0.5rem] py-[0.7rem]">
+                    <a href="contact.html" class="px-[0.5rem] py-[0.7rem] nav-link">
                         <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Contact</li>
                     </a>
                 </ul>

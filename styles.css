@@ -53,11 +53,13 @@
     transform: scaleX(1)
 }
 
-a.active {
+
+.nav-link[aria-current="page"] {
     background-color: #fff;
     border-radius: 50px;
 }
 
-a.active li {
+.nav-link[aria-current="page"] li {
     color: #222;
 }
+
