@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- wrapper -->
-    <section class="overflow-x-hidden overflow-y-hidden h-[100vh] flex flex-col justify-between">
+    <section class="overflow-x-hidden overflow-y-auto min-h-[100vh] flex flex-col justify-between">
         <!-- background -->
         <div class="pageLines"></div>
        
@@ -31,36 +31,251 @@
         </header>
 
         <!-- content section -->
-        <!-- <section class="relative w-[928px] mx-auto h-[204px]">
-            <div>
-                <img src="./assets/boy-avatar.png" alt=""
-                     width="300px" height="300px" class="absolute -left-[5%] -top-[100%]">
-                <img src="./assets/laptop.png" alt=""
-                     width="300px" height="300px" class="absolute -right-[5%] -bottom-[50%]">
-
-                <div class="homeHeading">
-                    <h1 class="text-[3rem] leading-1 font-[700] font-['Clash Display'] tracking-[0.125rem] text-transparent 
-                        pb-[0.25rem] uppercase text-center" 
-                        style="-webkit-text-stroke: 1.5px #222;">
-                        Hey, I'm
-                        <span class="text-[3rem] leading-[1rem] font-[700] font-['Clash Display'] tracking-[0.125rem] text-[#222]
-                              uppercase relative">
-                              Rahul Malik
-                        </span>
-                    </h1>
-                    <p class="text-[1.25rem] font-[500] leading-1.5 text-[#222] pt-[0.375rem] pb-[1.5rem] text-center">
-                        I'm a MERN stack developer.
-                    </p>
+        <section class="font-['Clash Display'] min-h-[100vh] w-[100%] flex flex-col items-start gap-[1rem] px-[15rem] 
+                 pt-[9rem] pb-[4rem] absolute">
+            <!-- web section -->
+            <div class="w-[100%] mb-[2rem]">
+                <!-- heading -->
+                <div class="border-b-[1.25px] border-solid border-[#222] mb-[1.5rem]">
+                    <h2 class="text-[2rem] font-[700] uppercase text-transparent tracking-[0.15rem]" 
+                    style="-webkit-text-stroke: 1.5px #222;">Web</h2>
                 </div>
 
-                <div class="homeAnchor flex justify-center items-center">
-                    <a href="#" class="relative flex justify-center items-center gap-[0.25rem] w-fit">
-                        <img src="./assets/asset 9.svg" alt="">
-                        <p class="font-[500] text-[#222]">About me</p>
-                    </a>
+                <!-- skills section -->
+                <div class="flex flex-wrap items-start justify-start gap-[2rem]">
+                    <!-- html -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#e34f261a] border-solid border-[#E34F26] border-[1px] ">
+                                <img src="./assets/html-5.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#E34F26]" style="letter-spacing: .15rem;">HTML</h3>
+                        </div>
+                    </div>
+
+                    <!-- css -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#1572b61a] border-solid 
+                            border-[#1572B6] border-[1px] ">
+                                <img src="./assets/css-3.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#1572B6]" style="letter-spacing: .15rem;">CSS</h3>
+                        </div>
+                    </div>
+
+                    <!-- tailwind css -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[rgba(56,178,172,0.1)] border-solid 
+                            border-[#38B2AC] border-[1px] ">
+                                <img src="./assets/tailwind.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#38B2AC]" style="letter-spacing: .15rem;">TailwindCSS</h3>
+                        </div>
+                    </div>
+
+                    <!-- javascript -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#f7df1e1a] border-solid 
+                            border-[#F7DF1E] border-[1px] ">
+                                <img src="./assets/javascript.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#F7DF1E]" style="letter-spacing: .15rem;">JavaScript</h3>
+                        </div>
+                    </div>
+
+                    <!-- mongoDB -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#5896361a] border-solid 
+                            border-[#589636] border-[1px] ">
+                                <img src="./assets/MongoDB.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#589636]" style="letter-spacing: .15rem;">MongoDB</h3>
+                        </div>
+                    </div>
+
+                    <!-- express -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#8586861a] border-solid 
+                            border-[#858686] border-[1px] ">
+                                <img src="./assets/Express.png" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#858686]" style="letter-spacing: .15rem;">ExpressJs</h3>
+                        </div>
+                    </div>
+
+                    <!-- react -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#61dafb1a] border-solid 
+                            border-[#61DAFB] border-[1px] ">
+                                <img src="./assets/react.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#61DAFB]" style="letter-spacing: .15rem;">ReactJs</h3>
+                        </div>
+                    </div>
+
+                    <!-- nodejs -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#21a3661a] border-solid 
+                            border-[#21A366] border-[1px]">
+                                <img src="./assets/node-js.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#21A366]" style="letter-spacing: .15rem;">NodeJs</h3>
+                        </div>
+                    </div>
+
+                    <!-- java -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#1565c11a] border-solid 
+                            border-[#1565C0] border-[1px]">
+                                <img src="./assets/java-icon.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#1565C0]" style="letter-spacing: .15rem;">Java</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> -->
+
+            <!-- deployment section -->
+            <div class="w-[100%] mb-[2rem]">
+                <!-- heading -->
+                <div class="border-b-[1.25px] border-solid border-[#222] mb-[1.5rem]">
+                    <h2 class="text-[2rem] font-[700] uppercase text-transparent tracking-[0.15rem]" 
+                    style="-webkit-text-stroke: 1.5px #222;">Deployment</h2>
+                </div>
+
+                <!-- skills section -->
+                <div class="flex flex-wrap items-start justify-start gap-[2rem]">
+                    <!-- netlify -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#39c6b81a] border-solid
+                            border-[#529AC3] border-[1px] ">
+                                <img src="./assets/netlify-icon.png" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#529AC3]" style="letter-spacing: .15rem;">Netlify</h3>
+                        </div>
+                    </div>
+
+                    <!-- vercel -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#0000001a] border-solid
+                            border-[#000] border-[1px] ">
+                                <img src="./assets/vercel-fill.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#000]" style="letter-spacing: .15rem;">Vercel</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- other section -->
+            <div class="w-[100%] mb-[2rem]">
+                <!-- heading -->
+                <div class="border-b-[1.25px] border-solid border-[#222] mb-[1.5rem]">
+                    <h2 class="text-[2rem] font-[700] uppercase text-transparent tracking-[0.15rem]" 
+                    style="-webkit-text-stroke: 1.5px #222;">Other</h2>
+                </div>
+
+                <!-- skills section -->
+                <div class="flex flex-wrap items-start justify-start gap-[2rem]">
+                    <!-- git -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#f04e321a] border-solid
+                            border-[#F05032] border-[1px] ">
+                                <img src="./assets/git.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#F05032]" style="letter-spacing: .15rem;">Git</h3>
+                        </div>
+                    </div>
+
+                    <!-- github -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#0000001a] border-solid
+                            border-[#000] border-[1px] ">
+                                <img src="./assets/github-icon.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#000]" style="letter-spacing: .15rem;">GitHub</h3>
+                        </div>
+                    </div>
+
+                    <!-- figma -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#f24f1e1a] border-solid
+                            border-[#F24E1E] border-[1px] ">
+                                <img src="./assets/figma.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#F24E1E]" style="letter-spacing: .15rem;">Figma</h3>
+                        </div>
+                    </div>
+
+                    <!-- firebase -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#ffc9281a] border-solid
+                            border-[#FFCA28] border-[1px] ">
+                                <img src="./assets/firebase.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#FFCA28]" style="letter-spacing: .15rem;">Firebase</h3>
+                        </div>
+                    </div>
+
+                    <!-- vscode -->
+                    <div class="overflow-hidden">
+                        <div class="flex flex-col items-center gap-[0.5rem]">
+                            <!-- icon -->
+                            <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#007acc1a] border-solid
+                            border-[#007ACC] border-[1px] ">
+                                <img src="./assets/vscode.svg" alt="" width="50" height="50">
+                            </div>
+                            <!-- title -->
+                            <h3 class="text-[1rem] font-[500] text-[#007ACC]" style="letter-spacing: .15rem;">VSCode</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- nav bar -->
         <section class="flex justify-center items-center">

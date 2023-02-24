@@ -22,7 +22,7 @@
                     <img src="./assets/asset 6.svg" alt="" height="39px" width="100px">
                 </div>
                 <!-- theme changing btn -->
-                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff]">
+                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff] z-50">
                     <a href="#" class="text-[24px]">
                         <i class="fa-regular fa-moon"></i>
                     </a>
@@ -31,36 +31,77 @@
         </header>
 
         <!-- content section -->
-        <!-- <section class="relative w-[928px] mx-auto h-[204px]">
-            <div>
-                <img src="./assets/boy-avatar.png" alt=""
-                     width="300px" height="300px" class="absolute -left-[5%] -top-[100%]">
-                <img src="./assets/laptop.png" alt=""
-                     width="300px" height="300px" class="absolute -right-[5%] -bottom-[50%]">
+        <section class="font-['Clash Display'] absolute flex flex-col items-start gap-[1rem] px-[15rem] pt-[13rem] pb-[1.5rem] 
+        h-[100%] w-[100%] min-h-[100vh]">
+            <!-- illustration image -->
+            <div class="w-[300px] h-[300px] absolute bottom-[10%] left-[10%]">
+                <img src="./assets/contact-img.png" alt="">
+            </div>
 
-                <div class="homeHeading">
-                    <h1 class="text-[3rem] leading-1 font-[700] font-['Clash Display'] tracking-[0.125rem] text-transparent 
-                        pb-[0.25rem] uppercase text-center" 
-                        style="-webkit-text-stroke: 1.5px #222;">
-                        Hey, I'm
-                        <span class="text-[3rem] leading-[1rem] font-[700] font-['Clash Display'] tracking-[0.125rem] text-[#222]
-                              uppercase relative">
-                              Rahul Malik
-                        </span>
-                    </h1>
-                    <p class="text-[1.25rem] font-[500] leading-1.5 text-[#222] pt-[0.375rem] pb-[1.5rem] text-center">
-                        I'm a MERN stack developer.
-                    </p>
+            <!-- heading -->
+            <div class="border-b-[2px] border-[#222] border-solid w-[100%]">
+                <h2 class="text-[3.5rem] font-[700] text-transparent uppercase tracking-[0.15rem]" 
+                    style="-webkit-text-stroke: 2px #222;">
+                    Contact
+                </h2>
+            </div>
+
+            <!-- contact info -->
+            <div class="w-[100%] flex items-start gap-[1.5rem]">
+                <!-- left/email part -->
+                <div class="w-[100%] flex items-start gap-[2rem]">
+                    <div>
+                        <h3 class="text-[1.5rem] font-[700] uppercase text-[#222] tracking-[0.15rem]">Email</h3>
+                    </div>
+
+                    <div class="flex flex-col gap-[0.5rem] text-[1.25rem] font-[500] text-[#222] items-start">
+                        <div class="homeAnchor z-50">
+                            <a href="#" class="flex gap-2">
+                                <img src="./assets/arrow-up-right.svg" alt="" width="16px" height="16px">
+                                malikrahul872@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="homeAnchor z-50">
+                            <a href="#" class="flex gap-2">
+                                <img src="./assets/arrow-up-right.svg" alt="" width="16px" height="16px">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="homeAnchor flex justify-center items-center">
-                    <a href="#" class="relative flex justify-center items-center gap-[0.25rem] w-fit">
-                        <img src="./assets/asset 9.svg" alt="">
-                        <p class="font-[500] text-[#222]">About me</p>
-                    </a>
+                <!-- right/social media -->
+                <div class="w-[100%] flex items-start gap-[2rem]">
+                    <div>
+                        <h3 class="text-[1.5rem] font-[700] uppercase text-[#222] tracking-[0.15rem]">Social Medias</h3>
+                    </div>
+
+                    <div class="flex flex-col gap-[0.5rem] text-[1.25rem] font-[500] text-[#222] items-start">
+                        <div class="homeAnchor z-50">
+                            <a href="#" class="flex gap-2">
+                                <img src="./assets/arrow-up-right.svg" alt="" width="16px" height="16px">
+                                LinkedIn
+                            </a>
+                        </div>
+
+                        <div class="homeAnchor z-50">
+                            <a href="#" class="flex gap-2">
+                                <img src="./assets/arrow-up-right.svg" alt="" width="16px" height="16px">
+                                Twitter
+                            </a>
+                        </div>
+
+                        <div class="homeAnchor z-50">
+                            <a href="#" class="flex gap-2">
+                                <img src="./assets/arrow-up-right.svg" alt="" width="16px" height="16px">
+                                Instagram
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- nav bar -->
         <section class="flex justify-center items-center">
