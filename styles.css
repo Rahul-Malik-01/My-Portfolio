@@ -62,3 +62,90 @@
 .nav-link[aria-current="page"] li {
     color: #222;
 }
+
+/* projects section timelline */
+
+.odd::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+    background-color: #eee;
+    border: 1px solid #222;
+}
+
+.even::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    margin-bottom: 260px;
+    z-index: 2;
+    background-color: #eee;
+    border: 1px solid #222;
+}
+
+.timeline ul li:nth-of-type(odd) > div {
+    margin-left: 35px;
+    margin-top: -10px;
+}
+.timeline ul li:nth-of-type(even) > div {
+    margin-left: -509px;
+    margin-top: -270px;
+}
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.timeline ul li:nth-of-type(odd) div {
+    transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li:nth-of-type(even) div {
+    transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* animations fadeIn */
+
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .fadeInUp-animation {
+    animation: 1s fadeInUp;
+  }
+  
+
+@keyframes fadeInRight {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .fadeInRight-animation {
+    animation: 1s fadeInRight;
+  }

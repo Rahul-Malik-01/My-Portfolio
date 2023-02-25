@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- wrapper -->
-    <section class="overflow-x-hidden overflow-y-hidden h-[100vh] flex flex-col justify-between">
+    <section class="overflow-x-hidden overflow-y-auto h-[100vh] flex flex-col justify-between">
         <!-- background -->
         <div class="pageLines"></div>
        
@@ -32,34 +32,272 @@
 
         
         <!-- porjects section -->
-        <section class="w-[100%] mb-[2rem] absolute pt-[9rem]">
+        <section class="w-[100%] h-[100%] mb-[2rem] absolute pt-[9rem]">
             <!-- heading -->
             <div class="border-b-[1.25px] border-[#222] border-solid mx-[15rem] mb-[1.2rem]">
-                <h2 class="text-[2rem] font-[700] tracking-[0.15rem] text-transparent uppercase"
+                <h2 class="text-[2rem] font-[700] tracking-[0.15rem] text-transparent uppercase fadeInUp-animation"
                 style="-webkit-text-stroke: 1.5px #222;">Projects</h2>
             </div>
 
             <!-- content section -->
-            <div class="h-[600px] flex items-start justify-center gap-[2rem] mb-[1rem] font-['Clash Display'] overflow-x-hidden">
-                <!-- left part -->
-                <div class="sticky top-0 w-[50%] h-[100%] rounded-tr-[30px] overflow-hidden flex justify-center items-center"></div>
+            <section class="timeline w-[100%] h-[100%] px-[15rem]">
+                <ul class="flex flex-col justify-center items-center">
+                    <!-- card-1 nft-tinyfaces-project -->
+                    <li class="odd relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#0AC05E]" 
+                             style="box-shadow: 3px 3px 10px #00000072;">
+                            <!-- <div class="absolute left-4 -top-4 rounded-[5px] h-[30px] w-fit p-2 bg-[#22222280] flex justify-center items-center">
+                                <span>2 Jan 2023</span>
+                            </div> -->
 
-                <!-- right part -->
-                <ul class="w-[50%] h-[100%] flex flex-col items-start pr-[15rem] -mr-[1rem] overflow-y-scroll">
-                    <li class="w-[100%] flex items-center flex-shrink-0 border-b-[1.5px] border-solid border-[#222] overflow-hidden">
-                        <a href="#" class="w-[100%] py-[1rem] flex items-center gap-[0.5rem] text-[#222]">
-                            <span class="text-[1.25rem] -mb-[px] font-[500] text-inherit flex justify-center items-center">
-                                Project
-                            </span>
-                        </a>
+                            <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                                <img src="./assets/tailwindcss-black.svg" alt="" class="w-[1.25rem] h-[1.25rem] hover:scale-125 transition-all duration-400">
+                            </div>
+                            
+                            <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4 justify-start items-center">
+                                <a href="https://github.com/Rahul-Malik-01/NFT-Website-Landing-Page" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahul-malik-01-nft-landing-page.netlify.app/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/nft-tinyfaces-project.png" alt="">
+                            </div>
+                        </div>
+                        
                     </li>
+
+
+                    <!-- card-2 discord-clone-project-->
+                    <li class="even relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#404EED]"
+                             style="box-shadow: 3px 3px 10px #00000072;">
+                            <!-- <div class="absolute right-4 -top-4 rounded-[5px] h-[30px] w-fit p-2 bg-[#22222280] flex justify-center items-center">
+                                <span>2 Jan 2023</span>
+                            </div> -->
+
+                            <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                                <img src="./assets/tailwindcss-white.svg" alt="" class="w-[1.25rem] h-[1.25rem] hover:scale-125 transition-all duration-400">
+                            </div>
+
+                            <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4 text-[#fff]">
+                                <a href="https://github.com/Rahul-Malik-01/Discord-Clone" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahulmalik-01-discord-clone.netlify.app/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/discord-project.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- card-3 razorpay-clone-project-->
+                    <li class="odd relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#02042a]"
+                             style="box-shadow: 3px 3px 10px #00000072;">
+
+                             <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                                <img src="./assets/tailwindcss-white.svg" alt="" class="w-[1.25rem] h-[1.25rem] hover:scale-125 transition-all duration-400">
+                            </div>
+
+                             <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4 text-[#fff]">
+                                <a href="https://github.com/Rahul-Malik-01/Razorpay-Clone" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahulmalik-01-razorpay-clone.netlify.app/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/razorpay-clone.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- card-4 portfolio-john-doe-->
+                    <li class="even relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#e7e7e7]"
+                             style="box-shadow: 3px 3px 10px #00000072;">
+
+                             <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                            </div>
+
+                             <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4">
+                                <a href="https://github.com/Rahul-Malik-01/Portfolio-Website" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahul-malik-01.github.io/Portfolio-Website/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/portfolio-john-doe.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- card-5 image gallery-2-->
+                    <li class="odd relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#FAEBD7]"
+                             style="box-shadow: 3px 3px 10px #00000072;">
+
+                             <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                            </div>
+
+                             <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4">
+                                <a href="https://github.com/Rahul-Malik-01/Image-Gallery-2" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahul-malik-01.github.io/Image-Gallery-2/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/imagee-gallery-2.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- card-6 modern-chair -->
+                    <li class="even relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#e66a6a]"
+                             style="box-shadow: 3px 3px 10px #00000072;">
+
+                             <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                            </div>
+
+                             <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4 text-[#fff]">
+                                <a href="https://github.com/Rahul-Malik-01/Modern-Chair" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahul-malik-01.github.io/Modern-Chair/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/modern-chair-project.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- card-7 parallax-website-->
+                    <li class="odd relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#2D2D2D]"
+                             style="box-shadow: 3px 3px 10px #00000072;">
+
+                             <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                            </div>
+
+                             <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4 text-[#fff]">
+                                <a href="https://github.com/Rahul-Malik-01/Parallax-Website" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahul-malik-01.github.io/Parallax-Website/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/parallax-web-project.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- card-8 image gallery-1  -->
+                    <li class="even relative w-[6px] mx-0 my-auto pt-[50px] mb-[8rem] bg-[#22222280]">
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#e7e7e7]"
+                             style="box-shadow: 3px 3px 10px #00000072;">
+
+                             <!-- tech stack -->
+                            <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
+                                <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
+                                <i class="fa-brands fa-css3 hover:scale-125 transition-all duration-400"></i>
+                            </div>
+
+                             <!-- links -->
+                            <div class="absolute bottom-4 right-4 flex gap-4">
+                                <a href="https://github.com/Rahul-Malik-01/Image-Gallery-1" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://rahul-malik-01.github.io/Image-Gallery-1/" 
+                                   class="text-[1.25rem] hover:scale-125 transition-all duration-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </div>
+
+                            <div>
+                                <img src="./assets/image-gallery-1.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
-            </div>
+            </section>
         </section>
 
 
         <!-- nav bar -->
-        <section class="flex justify-center items-center">
+        <section class="flex justify-center items-center z-50">
             <nav class="fixed bottom-[1rem] p-[0.5rem]">
                 <ul class="flex justify-center items-center rounded-full overflow-hidden gap-[0.25rem] p-[0.3rem] bg-[#222]">
                     <a href="index.html" class="px-[0.5rem] py-[0.7rem] nav-link">
