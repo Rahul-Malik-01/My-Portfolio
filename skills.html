@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Rahul Malik • MERN Stack Developer</title>
+    <link rel="icon" sizes="76x76" href="./assets/favicon.svg">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mouse.css">
 </head>
 <body>
+
+    <div id="mouse"></div>
+
     <!-- wrapper -->
     <section class="overflow-x-hidden overflow-y-auto min-h-[100vh] flex flex-col justify-between">
         <!-- background -->
@@ -22,7 +27,7 @@
                     <img src="./assets/asset 6.svg" alt="" height="39px" width="100px">
                 </div>
                 <!-- theme changing btn -->
-                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff]">
+                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff] z-50">
                     <a href="#" class="text-[24px]">
                         <i class="fa-regular fa-moon"></i>
                     </a>
@@ -32,7 +37,7 @@
 
         <!-- content section -->
         <section class="font-['Clash Display'] min-h-[100vh] w-[100%] flex flex-col items-start gap-[1rem] px-[15rem] 
-                 pt-[9rem] pb-[4rem] absolute">
+                 pt-[9rem] pb-[4rem] -mx-4 absolute">
             <!-- web section -->
             <div class="w-[100%] mb-[2rem]">
                 <!-- heading -->
@@ -48,7 +53,7 @@
                         <div class="flex flex-col items-center gap-[0.5rem] fadeInUp-animation">
                             <!-- icon -->
                             <div class="flex justify-center items-center p-[1rem] rounded-[50%] bg-[#e34f261a] border-solid
-                             border-[#E34F26] border-[1px] ">
+                             border-[#E34F26] border-[1px]">
                                 <img src="./assets/html-5.svg" alt="" width="50" height="50">
                             </div>
                             <!-- title -->
@@ -306,5 +311,6 @@
 
     <script src="https://kit.fontawesome.com/bf80e64e8a.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="mouse.js"></script>
 </body>
 </html>

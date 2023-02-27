@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Rahul Malik • MERN Stack Developer</title>
+    <link rel="icon" sizes="76x76" href="./assets/favicon.svg">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mouse.css">
 </head>
 <body>
+    <div id="mouse"></div>
+
     <!-- wrapper -->
     <section class="overflow-x-hidden overflow-y-auto h-[100vh] flex flex-col justify-between">
+
         <!-- background -->
         <div class="pageLines"></div>
        
@@ -22,7 +27,7 @@
                     <img src="./assets/asset 6.svg" alt="" height="39px" width="100px">
                 </div>
                 <!-- theme changing btn -->
-                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff]">
+                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff] z-50">
                     <a href="#" class="text-[24px]">
                         <i class="fa-regular fa-moon"></i>
                     </a>
@@ -32,7 +37,7 @@
 
         
         <!-- porjects section -->
-        <section class="w-[100%] h-[100%] mb-[2rem] absolute pt-[9rem]">
+        <section class="w-[100%] h-[100vh] mb-[2rem] absolute pt-[9rem]">
             <!-- heading -->
             <div class="border-b-[1.25px] border-[#222] border-solid mx-[15rem] mb-[1.2rem]">
                 <h2 class="text-[2rem] font-[700] tracking-[0.15rem] text-transparent uppercase fadeInUp-animation"
@@ -40,15 +45,17 @@
             </div>
 
             <!-- content section -->
-            <section class="timeline w-[100%] h-[100%] px-[15rem]">
-                <ul class="flex flex-col justify-center items-center">
+            <section class="timeline w-[100%] h-[100%] px-[15rem] -mx-4">
+                <ul class="flex flex-col justify-center items-center font-['Clash Display']">
                     <!-- card-1 nft-tinyfaces-project -->
                     <li class="odd relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
                         <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#0AC05E]" 
                              style="box-shadow: 3px 3px 10px #00000072;">
-                            <!-- <div class="absolute left-4 -top-4 rounded-[5px] h-[30px] w-fit p-2 bg-[#22222280] flex justify-center items-center">
-                                <span>2 Jan 2023</span>
-                            </div> -->
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    TinyFaces Landing Page - 16 Feb 2023
+                                </span>
+                            </div>
 
                             <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
@@ -81,9 +88,12 @@
                     <li class="even relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
                         <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#404EED]"
                              style="box-shadow: 3px 3px 10px #00000072;">
-                            <!-- <div class="absolute right-4 -top-4 rounded-[5px] h-[30px] w-fit p-2 bg-[#22222280] flex justify-center items-center">
-                                <span>2 Jan 2023</span>
-                            </div> -->
+
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    Discord UI Clone - 05 Feb 2023
+                                </span>
+                            </div>
 
                             <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
@@ -116,6 +126,12 @@
                         <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#02042a]"
                              style="box-shadow: 3px 3px 10px #00000072;">
 
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    Razorpay UI Clone - 26 Jan 2023
+                                </span>
+                            </div>
+
                              <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
                                 <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
@@ -147,6 +163,12 @@
                         <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#e7e7e7]"
                              style="box-shadow: 3px 3px 10px #00000072;">
 
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    Portfolio - 21 Jan 2023
+                                </span>
+                            </div>
+
                              <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
                                 <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
@@ -176,6 +198,12 @@
                     <li class="odd relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
                         <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#FAEBD7]"
                              style="box-shadow: 3px 3px 10px #00000072;">
+
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    Image Portfolio - 15 Jan 2023
+                                </span>
+                            </div>
 
                              <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
@@ -207,6 +235,12 @@
                         <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#e66a6a]"
                              style="box-shadow: 3px 3px 10px #00000072;">
 
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    Modern Chair - 10 Jan 2023
+                                </span>
+                            </div>
+
                              <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
                                 <i class="fa-brands fa-html5 hover:scale-125 transition-all duration-400"></i>
@@ -234,8 +268,14 @@
 
                     <!-- card-7 parallax-website-->
                     <li class="odd relative w-[6px] mx-0 my-auto pt-[50px] bg-[#22222280]">
-                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#2D2D2D]"
+                        <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#2d2d2d]"
                              style="box-shadow: 3px 3px 10px #00000072;">
+
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    Parallax Effect - 07 Jan 2023
+                                </span>
+                            </div>
 
                              <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] text-[#fff] justify-start items-center">
@@ -266,6 +306,12 @@
                     <li class="even relative w-[6px] mx-0 my-auto pt-[50px] mb-[8rem] bg-[#22222280]">
                         <div class="relative w-[480px] h-[300px] mt-[20px] bg-[#e7e7e7]"
                              style="box-shadow: 3px 3px 10px #00000072;">
+
+                            <div class="absolute left-0 -top-8">
+                                <span class="text-[1rem] font-[500] text-[#222] tracking-[0.15rem] drop-shadow-lg">
+                                    Image Gallery - 28 Dec 2023
+                                </span>
+                            </div>
 
                              <!-- tech stack -->
                             <div class="absolute bottom-[1.2rem] left-4 flex gap-4 text-[1.25rem] justify-start items-center">
@@ -324,5 +370,6 @@
 
     <script src="https://kit.fontawesome.com/bf80e64e8a.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="mouse.js"></script>
 </body>
 </html>

@@ -4,91 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Rahul Malik • MERN Stack Developer</title>
+    <link rel="icon" sizes="76x76" href="./assets/favicon.svg">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mouse.css">
+    <link rel="stylesheet" href="hide-scrollbar.css">
 </head>
 <body>
-    <!-- wrapper -->
-    <section class="overflow-x-hidden overflow-y-hidden h-[100vh] flex flex-col justify-between">
-        <!-- background -->
-        <div class="pageLines"></div>
 
-        <!-- header section -->
-        <header>
-            <div class="flex justify-between items-center px-[2rem] py-[0.25rem] mt-[1rem]">
-                <!-- header logo -->
+        <div id="mouse"></div>
+
+        <!-- wrapper -->
+        <section class="overflow-x-hidden overflow-y-hidden h-[100vh] flex flex-col justify-between">
+            <!-- background -->
+            <div class="pageLines"></div>
+
+            <!-- header section -->
+            <header>
+                <div class="flex justify-between items-center px-[2rem] py-[0.25rem] mt-[1rem]">
+                    <!-- header logo -->
+                    <div>
+                        <img src="./assets/asset 6.svg" alt="" height="39px" width="100px">
+                    </div>
+                    <!-- theme changing btn -->
+                    <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff] z-50">
+                        <a href="#" class="text-[24px]">
+                            <i class="fa-regular fa-moon"></i>
+                        </a>
+                    </button>
+                </div>
+            </header>
+
+            <!-- content section -->
+            <section class="relative w-[928px] mx-auto h-[204px]">
                 <div>
-                    <img src="./assets/asset 6.svg" alt="" height="39px" width="100px">
-                </div>
-                <!-- theme changing btn -->
-                <button class="w-[41.6px] h-[41.6px] flex justify-center items-center rounded-full bg-[#000] text-[#fff] z-50">
-                    <a href="#" class="text-[24px]">
-                        <i class="fa-regular fa-moon"></i>
-                    </a>
-                </button>
-            </div>
-        </header>
+                    <img src="./assets/boy-avatar.png" alt=""
+                        width="300px" height="300px" class="absolute -left-[5%] -top-[100%]">
+                    <img src="./assets/laptop.png" alt=""
+                        width="300px" height="300px" class="absolute -right-[5%] -bottom-[50%]">
 
-        <!-- content section -->
-        <section class="relative w-[928px] mx-auto h-[204px]">
-            <div>
-                <img src="./assets/boy-avatar.png" alt=""
-                     width="300px" height="300px" class="absolute -left-[5%] -top-[100%]">
-                <img src="./assets/laptop.png" alt=""
-                     width="300px" height="300px" class="absolute -right-[5%] -bottom-[50%]">
+                    <div class="homeHeading">
+                        <h1 class="text-[3rem] leading-1 font-[700] font-['Clash Display'] tracking-[0.125rem] text-transparent 
+                            pb-[0.25rem] uppercase text-center fadeInUp-animation" 
+                            style="-webkit-text-stroke: 1.5px #222;">
+                            Hey, I'm
+                            <span class="text-[3rem] leading-[1rem] font-[700] font-['Clash Display'] tracking-[0.125rem] text-[#222]
+                                uppercase relative fadeInUp-animation">
+                                Rahul Malik
+                            </span>
+                        </h1>
+                        <p class="text-[1.25rem] font-[500] leading-1.5 text-[#222] pt-[0.375rem] pb-[1.5rem] text-center fadeInUp-animation">
+                            I'm a MERN stack developer.
+                        </p>
+                    </div>
 
-                <div class="homeHeading">
-                    <h1 class="text-[3rem] leading-1 font-[700] font-['Clash Display'] tracking-[0.125rem] text-transparent 
-                        pb-[0.25rem] uppercase text-center fadeInUp-animation" 
-                        style="-webkit-text-stroke: 1.5px #222;">
-                        Hey, I'm
-                        <span class="text-[3rem] leading-[1rem] font-[700] font-['Clash Display'] tracking-[0.125rem] text-[#222]
-                              uppercase relative fadeInUp-animation">
-                              Rahul Malik
-                        </span>
-                    </h1>
-                    <p class="text-[1.25rem] font-[500] leading-1.5 text-[#222] pt-[0.375rem] pb-[1.5rem] text-center fadeInUp-animation">
-                        I'm a MERN stack developer.
-                    </p>
+                    <div class="homeAnchor flex justify-center items-center">
+                        <a href="about.html" class="relative flex justify-center items-center gap-[0.25rem] w-fit fadeInUp-animation">
+                            <img src="./assets/asset 9.svg" alt="">
+                            <p class="font-[500] text-[#222]">About me</p>
+                        </a>
+                    </div>
                 </div>
+            </section>
 
-                <div class="homeAnchor flex justify-center items-center">
-                    <a href="about.html" class="relative flex justify-center items-center gap-[0.25rem] w-fit fadeInUp-animation">
-                        <img src="./assets/asset 9.svg" alt="">
-                        <p class="font-[500] text-[#222]">About me</p>
-                    </a>
-                </div>
-            </div>
+            <!-- nav bar -->
+            <section class="flex justify-center items-center">
+                <nav class="fixed bottom-[1rem] p-[0.5rem]">
+                    <ul class="flex justify-center items-center rounded-full overflow-hidden gap-[0.25rem] p-[0.3rem] bg-[#222]">
+                        <a href="index.html" aria-current="page" class="px-[0.5rem] py-[0.7rem] nav-link">
+                            <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Home</li>
+                        </a>
+                        <a href="about.html" class="px-[0.5rem] py-[0.7rem] nav-link">
+                            <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">About</li>
+                        </a>
+                        <a href="skills.html" class="px-[0.5rem] py-[0.7rem] nav-link">
+                            <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Skills</li>
+                        </a>
+                        <a href="experience.html" class="px-[0.5rem] py-[0.7rem] nav-link">
+                            <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Experience</li>
+                        </a>
+                        <a href="contact.html" class="px-[0.5rem] py-[0.7rem] nav-link">
+                            <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+            </section>
         </section>
 
-        <!-- nav bar -->
-        <section class="flex justify-center items-center">
-            <nav class="fixed bottom-[1rem] p-[0.5rem]">
-                <ul class="flex justify-center items-center rounded-full overflow-hidden gap-[0.25rem] p-[0.3rem] bg-[#222]">
-                    <a href="index.html" aria-current="page" class="px-[0.5rem] py-[0.7rem] nav-link">
-                        <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Home</li>
-                    </a>
-                    <a href="about.html" class="px-[0.5rem] py-[0.7rem] nav-link">
-                        <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">About</li>
-                    </a>
-                    <a href="skills.html" class="px-[0.5rem] py-[0.7rem] nav-link">
-                        <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Skills</li>
-                    </a>
-                    <a href="experience.html" class="px-[0.5rem] py-[0.7rem] nav-link">
-                        <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Experience</li>
-                    </a>
-                    <a href="contact.html" class="px-[0.5rem] py-[0.7rem] nav-link">
-                        <li class="text-[0.7rem] font-[600] text-[#fff] uppercase px-[0.5rem]">Contact</li>
-                    </a>
-                </ul>
-            </nav>
-        </section>
-    </section>
 
 
-
-    <script src="https://kit.fontawesome.com/bf80e64e8a.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/bf80e64e8a.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <script src="mouse.js"></script>
 </body>
 </html>
